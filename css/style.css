@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/mentalism.jpeg);
+    background-size: cover;
+    font-family: '筑紫A丸ゴシック';
+    font-size: 20px;
+}
+
+#modal {
+    position: absolute;
+    width: 600px;
+    height: 560px;
+    top: calc(50% - 560px / 2);
+    left: calc(50% - 600px / 2);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: pointer-events .3s, opacity .3s;
+}
+
+#modal.appear {
+    pointer-events: initial;
+    opacity: 1;
+}
+
+#modal h2 {
+    margin: 48px 0;
+}
+
+#modal button {
+    margin-top: 112px;
+}
+
+#wrapper {
+    position: relative;
+    width: 960px;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 48px;
+    background-size: cover;
+}
+
+#wrapper.search {
+    background-image: url(../img/search.png);
+}
+
+#wrapper.think {
+    background-image: url(../img/think.png);
+}
+
+#wrapper.found {
+    background-image: url(../img/found.png);
+}
+
+#wrapper.incorrect {
+    background-image: url(../img/incorrect.png);
+}
+
+#wrapper.learn {
+    background-image: url(../img/learn.png);
+}
+
+
+#gray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 800px;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+#help {
+    position: absolute;
+    top: 28px;
+    left: 32px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#help:hover {
+    background-color: #e5e5e5;
+}
+
+#answer-container {
+    width: 640px;
+    height: 280px;
+    margin: auto;
+}
+
+h1 {
+    padding-top: 8px;
+    font-size: 48px;
+}
+
+#wrapper h2 {
+    margin: 0 0 16px;
+    font-size: 32px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#caution span {
+    font-size: 32px;
+}
+
+#result span {
+    color: red;
+    font-size: 32px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
